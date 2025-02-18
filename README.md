@@ -65,3 +65,39 @@ Working Principle of Circuit:
     Then, Pin 11’s LED lights up for 2 seconds.
     Then, Pin 12’s LED lights up for 5 seconds.
     Finally, the cycle repeats.
+
+Installation & Setup
+Step 1: Clone the Repository
+
+Clone the repository to your local machine:
+
+    git clone https://github.com/SoumyadipxclarkE/Automatic_Traffic_Light_Control_Simulation.git
+
+Step 2: Upload Code to Arduino
+
+    Open the Arduino IDE.
+    Copy the code from the repository (or open the .ino file in the IDE).
+    Connect your Arduino to the computer using a USB cable.
+    Select the correct board and port in the Arduino IDE.
+    Click the "Upload" button to upload the code to the Arduino board.
+
+Step 3: Build the Circuit
+
+    Insert the 220Ω resistors and LEDs into the breadboard according to the diagram.
+    Connect the LEDs to pins 10, 11, and 12 of the Arduino.
+    Connect the cathodes (short legs) of the LEDs to GND.
+
+How It Works
+
+The setup() function configures the digital pins 10, 11, and 12 as output pins for controlling the LEDs.
+
+The loop() function runs continuously and cycles through the following actions:
+
+    Turns on the LED connected to pin 10 (Red Light) for 5 seconds.
+    Turns on the LED connected to pin 11 (Yellow Light) for 2 seconds.
+    Turns on the LED connected to pin 12 (Green Light) for 5 seconds.
+    The sequence then repeats.
+
+Usage
+
+ Once the code is uploaded and the circuit is built, the LEDs will blink in the sequence described above. The time delays (5 seconds for Red and Green, 2 seconds for Yellow) can be adjusted by modifying the delay() values in the code.
